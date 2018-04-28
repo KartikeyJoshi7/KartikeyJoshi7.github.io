@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">
+  function entry() {
+    document.getElementById('about').setAttribute("style", "left: 10px; transition: 0.6s");
+    document.getElementById('blog').setAttribute("style", "left: 10px; transition: 0.6s");
+    document.getElementById('projects').setAttribute("style", "left: 10px; transition: 0.6s");
+    document.getElementById('contact').setAttribute("style", "left: 600px; transition: 0.6s");
+    document.getElementById('gmail').setAttribute("style", "left: 800px; transition: 0.6s");
+
+  }
+
+</script>
 	
 <style>
-body {margin:0;
+body {
+margin:0;
 background-image: url("https://image.ibb.co/k5mtea/new.jpg");
 opacity: 0.9;
 min-height: 100%;
+font: 400 15px/1.8 "Lato", sans-serif;
 background-size: cover;
 }
-
 .topnav {
   overflow: hidden;
   background-color: black;
+  height: 50px;
 }
 
 .topnav a {
@@ -20,125 +33,113 @@ background-size: cover;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 5px 16px;
   text-decoration: none;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font-size: 10px;
 }
+
 
 .topnav a:hover {
   background-color: white;
   color: black;
 }
 
-.resume { color: orange;
-	font: 400 40px/1.8 "Lato", sans-serif;
-}
+
 
 #mySidenav a {
     position: absolute;
-    left: -230px;
-    transition: 0.3s;
     padding: 15px;
     width: 400px;
     text-decoration: none;
     font-size: 30px;
-    color: black;
+    color: white;
     border-radius: 0 15px 15px 0;
-}
-
-#mySidenav a:hover {
-	background-color: black;
-	color: white;
-    left: 0;
 }
 
 #about {
     top: 130px;
-    background-color: white;
+    left: -30px;
+    color: white;
+    letter-spacing: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #blog {
     top: 210px;
-    background-color: white;
+    left: -200px;
+    color: white;
+    letter-spacing: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #projects {
     top: 290px;
-    background-color: white;
+    left: -370px;
+    color: white;
+    letter-spacing: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#addnav a:hover{
+/*#addnav a:hover{
 	background-color: black;
 	color: white;
 	left: 0;
-}
-#contact {
-    top: 370px;
-    position: absolute;
-    left: -630px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 800px;
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
-    border-radius: 0 15px 15px 0;
-    background-color: white
-}
+}*/
+
 #gmail {
-    top: 450px;
+    top: 480px;
     position: absolute;
-    left: -630px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 800px;
+    left: 1200px;
+    padding: 10px;
+    width: 480px;
     text-decoration: none;
     font-size: 30px;
-    color: black;
-    border-radius: 0 15px 15px 0;
-    background-color: white
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
-#linkedin {
-    top: 530px;
+
+#contact {
+    top: 560px;
     position: absolute;
-    left: -630px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 1000px;
+    padding: 10px;
+    left: 1500px;
+    width: 690px;
     text-decoration: none;
     font-size: 30px;
-    color: black;
-    border-radius: 0 15px 15px 0;
-    background-color: white
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
+
 
 
 
 
 </style>
 </head>
-<body>
+<body onload="entry()">
 <div class="topnav">
   <a href="about.html" style="font-size: 25px;">About</a>
   <a href="education.html" style="font-size: 25px;">Education</a>
   <a href="skills.html" style="font-size: 25px;">Skills</a>
-  <a href="extra.html" style="font-size: 25px;">Extra Curricular</a>
   <a href="achievements.html" style="font-size: 25px;">Achievements</a>
   <a href="projects.html" style="font-size: 25px;">Experience</a>
+  <a href="extra.html" style="font-size: 25px;">Extra Curricular</a>
 
 </div>
 
 <div id="mySidenav">
-  <a href="#" id="about">    Name: Kartikey Joshi</a> 
-  <a href="#" id="blog">     D.O.B: March 28, 1997</a>
-  <a href="#" id="projects"> Ph: 9958832510</a>
+  <a href="#" id="about"> Kartikey Joshi</a> 
+  <a href="#" id="blog"> March 28, 1997</a>
+  <a href="#" id="projects"> 9958832510</a>
  
 </div>
 <div id="addnav">
- <a href="#" id="contact"> Add:  C-1/7, Parvatiya Anchal, Sant Nagar, Delhi-84.</a>
  <a href="#" id="gmail"> Gmail: joshikartikey298@gmail.com</a>
- <a href="https://www.linkedin.com/in/kartikey-joshi-955045140/" id="linkedin"> LinkedIn: https://www.linkedin.com/in/kartikey-joshi-955045140/</a>
- </div>
+ <a href="#" id="contact"> Add: C-1/7, Parvatiya Anchal, Sant Nagar, Delhi-84</a>
+  </div>
 
 
 </body>
